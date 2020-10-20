@@ -57,8 +57,10 @@ plugins:
 
 author:
   name   : "Rodrigo Serradura"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Functional programmer enthusiast. Interested in Ruby, JS, Elixir and DevOps."
+  avatar : "/assets/images/bio-photo1.jpg"
+  bio    : |
+    Rubysta raiz, interessado em design e arquitetura de software.
+    Entusiasta de programação funcional, CTO da Docsales, casado com a Talita e paizão da Bella e da Luiza.
   links:
     # - label: "Website"
     #   icon: "fas fa-fw fa-link"
@@ -77,13 +79,13 @@ footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/serradura"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/serradura"
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   url: "https://instagram.com/"
 
 defaults:
   # _posts
