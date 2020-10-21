@@ -1,5 +1,5 @@
 ---
-title: "Introdução a gem u-case"
+title: "Introdução a gem u-case (EM CONSTRUÇÃO)"
 last_modified_at: 2020-10-21T00:39:00-03:00
 categories:
   - Blog
