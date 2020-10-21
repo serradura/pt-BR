@@ -62,18 +62,12 @@ author:
     Rubysta raiz, interessado em design e arquitetura de software.
     Entusiasta de programação funcional, CTO da Docsales, casado com a Talita e paizão da Bella e da Luiza.
   links:
-    # - label: "Website"
-    #   icon: "fas fa-fw fa-link"
-    #   url: "https://"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/serradura"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/serradura"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/"
 
 footer:
   links:
@@ -83,9 +77,6 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/serradura"
-    # - label: "Instagram"
-    #   icon: "fab fa-fw fa-instagram"
-    #   url: "https://instagram.com/"
 
 defaults:
   # _posts
@@ -99,7 +90,6 @@ defaults:
       comments: true
       share: true
       related: true
-  # _pages
   - scope:
       path: "_pages"
       type: pages
