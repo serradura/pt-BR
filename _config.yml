@@ -13,6 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+url: https://serradura.github.io
+locale: pt-br
 title: Blog do @serradura
 email:
 description: >- # this means to ignore newlines until "baseurl:"
@@ -103,3 +105,8 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "serradurablog"
