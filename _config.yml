@@ -110,3 +110,9 @@ comments:
   provider: "disqus"
   disqus:
     shortname: "serradurablog"
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-181082320-1"
+    anonymize_ip: false # default
