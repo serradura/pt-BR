@@ -8,7 +8,7 @@ tags:
   - u-case
 ---
 
-Seja bem vindo(a) ao primeiro post. Já aviso que estou começando e <a href="https://twitter.com/serradura" target="_blank">conto com teu feedback</a> para me auxiliar a melhorar a maneira como compartilho conhecimento aqui no blog. 😉
+Seja bem vindo(a) ao meu primeiro post. Já aviso que estou começando e <a href="https://twitter.com/serradura" target="_blank">conto com teu feedback</a> para me auxiliar a melhorar a maneira como compartilho conhecimento aqui no blog. 😉
 
 ---
 
