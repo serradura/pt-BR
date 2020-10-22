@@ -364,9 +364,9 @@ Users::Create
 
 Ainda há muito a ser dito, pois mal tocamos a ponta do iceberg. Mas com os recursos que foram abordados já será possível criar casos de usos bem interessantes.
 
-Minha intencão foi em te apresentar de maneira rápida e objetiva o que é a gem `u-case` e como começar a fazer uso dela.
+Minha intenção foi em te apresentar de maneira rápida e objetiva o que é a gem `u-case` e como começar a fazer uso dela.
 
-E destacar o seu poder de composição, que facilita a criação de um código mais expressivo e prático de se manter/testar. Algo bem, diferente do que ocorre com o uso tradicional de service objects (como destaquei no [início deste post](#service-objects)).
+E destacar o seu poder de composição, que facilita a criação de um código mais expressivo e prático de se manter/testar. Algo bem diferente do que ocorre com o uso tradicional de service objects (como destaquei no [início deste post](#service-objects)).
 
 Nos próximos posts irei abordar diversas outras funcionalidades (*validação*, *normalização de atributos*, *diferentes formas de compor um flow*) e conceitos relacionados.
 
