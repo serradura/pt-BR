@@ -14,7 +14,7 @@ Seja bem vindo(a) ao meu primeiro post. Já aviso que estou começando e <a href
 
 A gem <a href="https://github.com/serradura/u-case" target="_blank">u-case</a> é um projeto que tenho me dedicado há mais de 1 ano. O projeto tem como objetivo facilitar o desenvolvimento e modelagem da camada de regras de negócio de aplições Ruby. Embora a gem possa ser utilizada com qualquer codebase, usarei o contexto de uma aplicação Ruby on Rails para apresentar o seu uso.
 
-Mas antes de falar dela, gostaria de destacar a abordagem mais praticada pela comunidade nos dias de hoje, no caso, a criação de <a href="https://codeclimate.com/blog/7-ways-to-decompose-fat-activerecord-models/" target="_blank">service objects</a>. Em geral, os services objects ficam localizados na pasta `app/services` de uma aplicação Rails e tem como responsabilidade concentrar as regras de negócio da aplicação, permitindo assim que outras camadas fiquem mais coesas (Ex: controllers e models). Porém, essa abordagem tem sido alvo de muitas críticas <a href="https://avdi.codes/service-objects/" target="_blank">[1]</a><a href="https://www.codewithjason.com/rails-service-objects/" target="_blank">[2]</a>. A razão disso é que o resultado mais comum é a criação de classes enormes e com excesso de responsabilidades. Dificultando assim a manutenção e evolução do código mediante o aumento de complexidade por conta de requisitos de negócios cada vez mais sofisticados.
+<span id="service-objects">Mas antes de falar dela, gostaria de destacar a abordagem mais praticada pela comunidade nos dias de hoje, no caso, a criação de <a href="https://codeclimate.com/blog/7-ways-to-decompose-fat-activerecord-models/" target="_blank">service objects</a></span>. Em geral, os services objects ficam localizados na pasta `app/services` de uma aplicação Rails e tem como responsabilidade concentrar as regras de negócio da aplicação, permitindo assim que outras camadas fiquem mais coesas (Ex: controllers e models). Porém, essa abordagem tem sido alvo de muitas críticas <a href="https://avdi.codes/service-objects/" target="_blank">[1]</a><a href="https://www.codewithjason.com/rails-service-objects/" target="_blank">[2]</a>. A razão disso é que o resultado mais comum é a criação de classes enormes e com excesso de responsabilidades. Dificultando assim a manutenção e evolução do código mediante o aumento de complexidade por conta de requisitos de negócios cada vez mais sofisticados.
 
 <a href="https://github.com/discourse/discourse/blob/ae47bcb2691612e478df78a328036124617edfa7/app/services/" target="_blank">Clique aqui</a> para visualizar a pasta de `app/services` do `Discourse`. E <a href="https://github.com/discourse/discourse/blob/ae47bcb2691612e478df78a328036124617edfa7/app/services/user_merger.rb#L237">clique aqui</a> para ver um exemplo de uma operação complexa (119 linhas) de um dos métodos do service object dessa aplicação.
 
@@ -74,7 +74,7 @@ puts result.data     # { :message => "`a` e `b` devem ser numéricos" }
 
 Todo caso de uso possuí a seguinte estrutura:
 1. Um conjunto de atributos (método `attributes`), ou seja, serão os dados de *input*.
-2. A regra de negócio, definido pelo método `call!`.
+2. A regra de negócio, definido pelo método `call!`.<br/>
 3. Um resultado de sucesso ou de falha, definido pelos métodos `Success(result: {})` ou `Failure(result: {})`.
 
 > Se analisarmos bem, um caso de uso nada mais é do que um **_input_** (os atributos), uma ou mais ações (processamento), que retornará um **_output_** (o resultado).
@@ -211,6 +211,8 @@ puts result.data # { :number => 18 }
 
 E aí, achou fácil? Perceba que é possível fazer composição tanto com casos de usos isolados, ou com outros `flows` (esse é o termo usado para indicar a composição de dois ou mais casos de uso).
 
+> **Atenção:** Perceba que os atributos ficam acessíveis no escopo do caso de uso, ou seja, eles são a porta de entrada para o processamento que ocorrerá no método `call!`. Sem eles essa relação de **input**/**output** ficará comprometida.
+
 ## Implementando algo do nosso dia dia
 
 Como aplicação prática, irei implementar um caso de uso que criará um usuário, o mesmo será composto dos seguintes passos:
@@ -302,7 +304,7 @@ module Users
     end
   end
 
-  class Create < Micro::Case
+  class CreateRecord < Micro::Case
     attributes :name, :email
 
     def call!
@@ -315,7 +317,7 @@ module Users
   CreationProccess = Micro::Cases.flow([
     NormalizeParams,
     ValidateParams,
-    Create
+    CreateRecord
   ])
 end
 
@@ -339,15 +341,36 @@ p result.data        # { :errors => ["Email is invalid"] }
 > É possível fazer uso das validações do ActiveModel nos atributos dos seus caso de uso. <a href="https://github.com/serradura/u-case/blob/main/README.pt-BR.md#u-casewith_activemodel_validation---como-validar-os-atributos-do-caso-de-uso" target="_blank">Clique aqui</a> para conferir na documentação.
 > (**Abordarei isso em outro post**)
 
+### 💡 Insight: Testes unitários
+
+Escreverei sobre isso em breve, mas acredito que seja perceptível o quão prático passa ser implementar testes unitários com essa abordagem. Uma vez que é possível testar o `flow` como um todo e/ou cada etapa que o compõe. Usando os exemplos anteriores da [criação de usuário](#implementando-algo-do-nosso-dia-dia), é mais prático testar:
+
+```ruby
+# Etapas que compõe o flow Users::CreationProccess
+Users::NormalizeParams
+Users::ValidateParams
+Users::CreateRecord
+
+# Fluxo completo
+Users::CreationProccess # Micro::Cases.flow([NormalizeParams, ValidateParams, CreateRecord])
+```
+
+Do que testar um único caso de uso com toda a regra de negócio, que é o caso do primeiro exemplo:
+```ruby
+Users::Create
+```
+
 ## Concluindo
 
 Ainda há muito a ser dito, pois mal tocamos a ponta do iceberg. Mas com os recursos que foram abordados já será possível criar casos de usos bem interessantes.
 
 Minha intencão foi em te apresentar de maneira rápida e objetiva o que é a gem `u-case` e como começar a fazer uso dela.
 
-Nos próximos posts irei abordar diversas outras funcionalidades (validação, normalização de atributos, diferentes formas de compor um flow) e conceitos relacionados.
+E destacar o seu poder de composição, que facilita a criação de um código mais expressivo e prático de se manter/testar. Algo bem, diferente do que ocorre com o uso tradicional de service objects (como destaquei no [início deste post](#service-objects)).
 
-Se tu curtiu esse conteúdo, sugiro acessar a <a href="https://github.com/serradura/u-case/blob/main/README.pt-BR.md" target="_blank">documentação em pt-BR</a> e a assistir uma palestra na qual apresento a gem `u-case` após apresentar um histórico de como aplicações Ruby on Rails tem sido organizadas nos últimos 15 anos.
+Nos próximos posts irei abordar diversas outras funcionalidades (*validação*, *normalização de atributos*, *diferentes formas de compor um flow*) e conceitos relacionados.
+
+Se tu curtiu esse conteúdo, sugiro acessar a <a href="https://github.com/serradura/u-case/blob/main/README.pt-BR.md" target="_blank">documentação em pt-BR</a> e a assistir uma palestra na qual apresento a gem `u-case` após explicar de forma prática como aplicações Ruby on Rails vem sendo organizadas nos últimos 15 anos.
 
 <small>* PS: Tem um desafio após o vídeo.</small>
 
