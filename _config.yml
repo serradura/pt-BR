@@ -70,6 +70,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/serradura"
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/channel/UCnkqH-e9V0VMeYrXElEPnTA"
 
 footer:
   links:
@@ -79,6 +82,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/serradura"
+    - label: "Youtube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/channel/UCnkqH-e9V0VMeYrXElEPnTA"
 
 defaults:
   # _posts
