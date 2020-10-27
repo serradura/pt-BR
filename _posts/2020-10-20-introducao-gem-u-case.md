@@ -1,6 +1,6 @@
 ---
 title: "Introdução a gem u-case"
-last_modified_at: 2020-10-23T00:19:00-03:00
+last_modified_at: 2020-10-24T07:37:00-03:00
 categories:
   - Blog
 tags:
@@ -411,3 +411,7 @@ ap result.transitions
 ```
 
 Valeu! 🙂
+
+---
+
+Já ouviu falar do **ada.rb - Arquitetura e Design de Aplicações em Ruby**? É um grupo focado em práticas de engenharia de software com Ruby. Acesse o <a href="https://t.me/ruby_arch_design_br" target="_blank">canal no telegram</a> e junte-se a nós em nosso <a href="https://www.meetup.com/pt-BR/design-e-arquitetura-de-aplicacoes-ruby/events/" target="_blank">meetup mensal</a> (100% on-line).
