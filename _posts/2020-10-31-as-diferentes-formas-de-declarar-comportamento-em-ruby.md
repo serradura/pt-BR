@@ -1,5 +1,5 @@
 ---
-title: "As diferentes formas de declarar comportamento em Ruby"
+title: "Programação multiparadigma - As diferentes formas de declarar comportamento em Ruby"
 last_modified_at: 2020-11-01T10:15:00-03:00
 categories:
   - Blog
@@ -216,7 +216,7 @@ p Calc::Multiply.call(3, 3) # 9
 
 Mas assim, quanto código para fazer algo tão simples né?
 
-Na minha opinião isso complicou de mais. Não seria melhor se Ruby tivesse um suporte real para declarar funções? 🤔
+Na minha opinião isso complicou demais. Não seria melhor se Ruby tivesse um suporte real para declarar funções? 🤔
 
 (Spoiler: Ruby tem suporte a funções sim! 🙌)
 
