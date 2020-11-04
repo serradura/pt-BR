@@ -68,11 +68,150 @@ A curto prazo tudo isso pode parecer improdutivo, já que você irá escrever ma
 
 ## Como fazer TDD?
 
+Para responder a essa pergunta te convido a escrever uma lib de testes para colocarmos o TDD em prática. Usarei o <a href="/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" title="Programação multiparadigma - As diferentes formas de declarar comportamento em Ruby">post anterior</a> como base para nos auxiliar na implementação e exploração dos conceitos.
+
+Um dos conceitos chaves dessa prática é a que testes devem ser encarados como uma **fonte de verdade**. Ou seja, **os teste não podem falhar**, se apenas um falhar essa fonte ficou comprometida.
+
+Dado o conceito acima, que tal usarmos <a href="https://www.honeybadger.io/blog/a-beginner-s-guide-to-exceptions-in-ruby/" target="_blank">*exceptions*</a> para interromper a execução de nossa suíte de testes em caso de falha?
+
+```ruby
+a = 1
+b = 2
+
+raise 'os valores devem ser iguais.' if a != b
+```
+
+O resultado pelo código acima será:
+
+```ruby
+RuntimeError: os valores devem ser iguais.
+```
+
+> Escreva nos comentários caso você tenha mais interesse em aprender sobre exceptions. <span style="font-style: normal;">😉</span>
+
+Será que você teve a mesma ideia que eu? E se usarmos uma sequência de condicionais que podem lançar exceptions para iniciar a definição dos nossos testes?
+
+Afim de ter uma relação com o <a href="/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" title="Programação multiparadigma - As diferentes formas de declarar comportamento em Ruby">post anterior</a>, usaremos o exemplo de uma calculadora para colocar em prática o uso de TDD.
+
+Como já foi dito, primeiro precisamos escrever um teste que falha:
+
+```ruby
+raise 'asserção falhou' if sum(1, 1) != 2
+```
+
+O que acontecerá se o código acima for executado? Dará erro! Por que? Porque o método não existe! 😅
+
+```ruby
+NoMethodError: undefined method `sum' for main:Object
+```
+
+Então, bora definir o método para evitar que esse erro?
+
+```ruby
+def sum(a, b)
+end
+
+raise 'asserção falhou' if sum(1, 1) != 2
+```
+
+Resultado do código acima será:
+
+```ruby
+RuntimeError: asserção falhou
+```
+
+Opa! O teste falhou. 🙌
+Ou seja, entramos no <span style="color: red;">*red mode*</span>.
+
+---
+Antes de continuarmos, precisamos abrir um rápido parênteses: Por que estamos usando a palavra **asserção**?
+
+Essa palavra pode ser <a href="https://www.dicio.com.br/assercao/" target="_blank">definida</a> como: Afirmação que se faz com muita certeza.
+
+Usando nosso último exemplo, lançaremos um erro caso a soma de 1 + 1 for diferente de 2.
+
+```ruby
+raise 'asserção falhou' if sum(1, 1) != 2
+```
+---
+
+Dado que estamos nosso teste está falhando, bora implementar o **mínimo** necessário para ele passar.
+
+```ruby
+def sum(a, b)
+  2
+end
+
+raise 'asserção falhou' if sum(1, 1) != 2
+```
+
+Ao executar o código anterior, verá que o mesmo não teve erros (nenhuma exception foi lançada). Com isso, entramos no <span style="color: green;">*green mode*</span>.
+
+Imagino que você já percebeu que o nosso método de soma, não soma! Mas acredite, essa é a proposta do TDD, você só escreve o código necessário para o teste passar. Quanto menos código para manter, melhor.
+
+E como ainda não temos código o suficiente para refatorar, sugiro reiniciarmos o ciclo e escrevermos um novo teste que falha.
+
+```ruby
+def sum(a, b)
+  2
+end
+
+raise 'asserção falhou' if sum(1, 1) != 2 # nil
+raise 'asserção falhou' if sum(1, 3) != 4 # RuntimeError: asserção falhou
+```
+
+Dado a falha anterior, podemos implementar o código necessário para ele passar.
+
+```ruby
+def sum(a, b)
+  a + b
+end
+
+raise 'asserção falhou' if sum(1, 1) != 2 # nil
+raise 'asserção falhou' if sum(1, 3) != 4 # nil
+```
+
+Uhuuuu! Os testes voltaram a passar. Legal né?
+
+Mas assim, que tal começarmos a refatorar a nossa "lib de testes"? Afinal podemos refatorá-la enquanto nossos testes passarem! 🤯
+
+Para isso, sugiro criarmo um método `assert` que lançará uma exception caso o valor do argumento seja `false`.
+
+```ruby
+def assert(truthy)
+  raise 'asserção falhou' unless truthy
+end
+```
+
+Obs: Podemos usar `unless` para negar uma condição, ou seja, é o mesmo que fazer `if !false`.
+
+A seguir, veja o exemplo completo da nosso método de asserção sendo usado para testar nossa implementação:
+
+```ruby
+# == testing lib ==
+def assert(truthy)
+  raise 'asserção falhou' unless truthy
+end
+
+# == implementation ==
+def sum(a, b)
+  a + b
+end
+
+# == tests ==
+assert sum(1, 1) == 2 # nil
+assert sum(1, 3) == 4 # nil
+```
+
 To-do...
 
 ## Agradecimentos
 
 Quero agradecer a colaboração do <a href="github.com/tomascco" target="_blank">@tomascco</a>, <a href="github.com/mploureno" target="_blank">@mploureno</a> e <a href="github.com/joaomarcos96" target="_blank">@joaomarcos96</a> na revisão deste post. Muito obrigado! 👏👏👏
+
+---
+
+Valeu! 🙂
 
 ---
 
