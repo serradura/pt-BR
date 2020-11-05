@@ -267,7 +267,7 @@ assert sum('3', 3) == 6
 
 Ao testar o código acima, verá que os testes voltaram a passar!
 
-**Próximo passo:** Refatorar!
+**Próximo passo:** Refatorar.
 
 Nessa etapa podemos analisar se existe alguma oportunidade para melhorar a implementação sem alterar o comportamento. Analise o código abaixo afim de encontrar algo para refinar:
 
