@@ -62,7 +62,7 @@ Ao fazer isso você e sua equipe obterão os seguintes benefícios:
 2. **Refatorar se torna algo fácil e seguro de ser feito.**
   <br/>Caso algum teste falhe durante um *refactoring* será possível identificar o problema e então corrigí-lo.
 
-A curto prazo tudo isso pode parecer improdutivo, já que você irá escrever mais código (implementação + testes) para chegar resultado desejado. Mas no médio/longo prazo, será um grande diferencial ter confiança para modificar o sistema conforme for preciso.
+A curto prazo tudo isso pode parecer improdutivo, já que você irá escrever mais código (implementação + testes) para chegar ao resultado desejado. Mas no médio/longo prazo, será um grande diferencial ter confiança para modificar o sistema conforme for preciso.
 
 ## Como fazer TDD?
 
