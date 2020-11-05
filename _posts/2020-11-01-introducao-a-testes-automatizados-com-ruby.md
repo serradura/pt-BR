@@ -37,7 +37,7 @@ Nessa etapa, você escreverá o código necessário para fazer o teste passar, o
 
 {% include figure image_path="/assets/images/3-tdd/3_Red-Green-Refactor.png" alt="Tdd: Red + Green + Refactor = Refinar a estrutura do código sem quebrar o comportamento." caption="Tdd: Red + Green + Refactor = Refinar a estrutura do código sem quebrar o comportamento." %}
 
-Nesse momento se torna possível <span style="color: blue;">refinar o código</span>, já que temos garantias que o mesmo funciona. Ou seja, podemos melhorar a implementação desde e os testes continuem passando.
+Nesse momento se torna possível <span style="color: blue;">refinar o código</span>, já que temos garantias que o mesmo funciona. Ou seja, podemos melhorar a implementação desde que os testes continuem passando.
 
 **Significado de refatoração**: É o processo de melhorar a estrutura de um código/sistema enquanto se preserva o comportamento existente.
 
@@ -66,7 +66,7 @@ A curto prazo tudo isso pode parecer improdutivo, já que você irá escrever ma
 
 ## Como fazer TDD?
 
-Para responder a essa pergunta te convido a escrever uma lib de testes para colocarmos todo a teoria em prática. Recomendo a leitura do <a href="/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" title="Programação multiparadigma - As diferentes formas de declarar comportamento em Ruby">post anterior</a> já que o conteúdo do mesmo servirá de base para nos auxiliar na implementação.
+Para responder a essa pergunta te convido a escrever uma lib de testes para colocarmos toda a teoria em prática. Recomendo a leitura do <a href="/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" title="Programação multiparadigma - As diferentes formas de declarar comportamento em Ruby">post anterior</a> já que o conteúdo do mesmo servirá de base para nos auxiliar na implementação.
 
 Um dos conceitos chaves dessa prática é a que testes devem ser encarados como uma **fonte de verdade**. Ou seja, **os teste não podem falhar**.
 
