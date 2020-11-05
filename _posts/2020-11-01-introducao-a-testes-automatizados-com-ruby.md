@@ -377,7 +377,7 @@ Perceba que nesse caso nós implementamos o método e os testes de uma única ve
 
 O poder do TDD está em desenvolver somente o código necessário para fazer o teste passar e na segurança de ter uma automação que verifica se o sistema funciona conforme o esperado.
 
-Recomendo que você pratique e estude o máximo possível sobre esse tema (testes), porque uma vez que você tem a funcionalidade garantida, será possível explorar coisas como: refactoring/design de código, melhorias de performance e etc... Ou seja, testes prepara o terreno para você explorar mais e mais.
+Recomendo que você pratique e estude o máximo possível sobre esse tema (testes), porque uma vez que você tem a funcionalidade garantida, será possível explorar coisas como: refactoring, design de código, performance, segurança e etc... Ou seja, testes prepara o terreno para você explorar diferentes tipos de assunto.
 
 No próximo post abordarei sobre o uso das principais bibliotecas de testes utilizadas em projetos Ruby: o <a href="https://github.com/seattlerb/minitest" target="_blank">minitest</a> e o <a href="https://github.com/rspec/rspec" target="_blank">rspec</a>.
 
