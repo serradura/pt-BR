@@ -171,7 +171,7 @@ Uhuuuu! Os testes voltaram a passar.
 
 Curtiu? Mas assim, dado que os testes estão passando que tal começarmos a refatorar a nossa "lib de testes"?
 
-Para isso, sugiro criarmo um método `assert` que lançará uma exception caso o valor do argumento seja `false`.
+Para isso, sugiro criarmos um método `assert` que lançará uma exception caso o valor do argumento seja `false`.
 
 ```ruby
 def assert(truthy)
