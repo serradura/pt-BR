@@ -87,7 +87,7 @@ RuntimeError: os valores devem ser iguais.
 
 > **Obs:** Escreva nos comentários caso você tenha mais interesse em aprender sobre exceptions. <span style="font-style: normal;">😉</span>
 
-Será que você teve a mesma ideia que eu? Que tal usarmos uma sequência de condicionais + exceptions para iniciar os nossos testes?
+Será que você teve a mesma ideia que eu? Que tal usarmos uma sequência de condicionais + exceptions para definir os nossos testes?
 
 > Afim de ter uma relação com o <a href="/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" title="Programação multiparadigma - As diferentes formas de declarar comportamento em Ruby">post anterior</a>, usaremos o exemplo de uma calculadora para colocar em prática o uso de TDD.
 
