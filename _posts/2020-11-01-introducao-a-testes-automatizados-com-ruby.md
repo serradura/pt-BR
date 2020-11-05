@@ -68,7 +68,7 @@ A curto prazo tudo isso pode parecer improdutivo, já que você irá escrever ma
 
 Para responder a essa pergunta te convido a escrever uma lib de testes para colocarmos toda a teoria em prática. Recomendo a leitura do <a href="/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" title="Programação multiparadigma - As diferentes formas de declarar comportamento em Ruby">post anterior</a> já que o conteúdo do mesmo servirá de base para nos auxiliar na implementação.
 
-Um dos conceitos chaves dessa prática é a que testes devem ser encarados como uma **fonte de verdade**. Ou seja, **os teste não podem falhar**.
+Um dos conceitos chaves dessa prática é a que testes devem ser encarados como uma **fonte de verdade**. Ou seja, **os testes não podem falhar**.
 
 E dado o conceito acima, sugiro fazermos uso de <a href="https://www.honeybadger.io/blog/a-beginner-s-guide-to-exceptions-in-ruby/" target="_blank">*exceptions*</a> para interromper a execução de nossa suíte de testes caso ocorra alguma falha.
 
