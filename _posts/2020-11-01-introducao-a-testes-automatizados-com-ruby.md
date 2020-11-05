@@ -303,7 +303,7 @@ assert sum(1, 3) == 4
 assert sum('3', 3) == 6
 ```
 
-Viu? Nossos testes continuram verdes. o/
+Viu? Nossos testes continuaram verdes. o/
 
 > **Dica:** <a href="https://guru-sp.github.io/tutorial_ruby/construcoes-simples.html" target="_blank">Clique aqui</a> para conhecer mais sobre o operador ternário `?:` que foi utilizado no método `numeric_value`.
 
