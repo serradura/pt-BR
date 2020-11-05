@@ -163,8 +163,8 @@ def sum(a, b)
   a + b
 end
 
-raise 'asserção falhou' if sum(1, 1) != 2 # nil
-raise 'asserção falhou' if sum(1, 3) != 4 # nil
+raise 'asserção falhou' if sum(1, 1) != 2
+raise 'asserção falhou' if sum(1, 3) != 4
 ```
 
 Uhuuuu! Os testes voltaram a passar.
@@ -195,8 +195,8 @@ def sum(a, b)
 end
 
 # == tests ==
-assert sum(1, 1) == 2 # nil
-assert sum(1, 3) == 4 # nil
+assert sum(1, 1) == 2
+assert sum(1, 3) == 4
 ```
 
 **Próximo requisito:** fazer com que o método de soma seja capaz de transformar *strings* em *números*.
@@ -260,9 +260,9 @@ def sum(a, b)
 end
 
 # == tests ==
-assert sum(1, 1) == 2 # nil
-assert sum(1, 3) == 4 # nil
-assert sum('3', 3) == 6 # nil
+assert sum(1, 1) == 2
+assert sum(1, 3) == 4
+assert sum('3', 3) == 6
 ```
 
 Ao testar o código acima, verá que os testes voltaram a passar!
@@ -298,9 +298,9 @@ def sum(a, b)
 end
 
 # == tests ==
-assert sum(1, 1) == 2 # nil
-assert sum(1, 3) == 4 # nil
-assert sum('3', 3) == 6 # nil
+assert sum(1, 1) == 2
+assert sum(1, 3) == 4
+assert sum('3', 3) == 6
 ```
 
 Viu? Nossos testes continuram verdes. o/
@@ -329,9 +329,9 @@ class Calc
 end
 
 # == tests ==
-assert Calc.sum(1, 1) == 2 # nil
-assert Calc.sum(1, 3) == 4 # nil
-assert Calc.sum('3', 3) == 6 # nil
+assert Calc.sum(1, 1) == 2
+assert Calc.sum(1, 3) == 4
+assert Calc.sum('3', 3) == 6
 ```
 
 Por fim, sugiro adicionarmos um método para realizar multiplicações (`Calc.multiply`).
@@ -360,13 +360,13 @@ class Calc
 end
 
 # == tests ==
-assert Calc.sum(1, 1) == 2 # nil
-assert Calc.sum(1, 3) == 4 # nil
-assert Calc.sum('3', 3) == 6 # nil
+assert Calc.sum(1, 1) == 2
+assert Calc.sum(1, 3) == 4
+assert Calc.sum('3', 3) == 6
 
-assert Calc.multiply(2, 2) == 4 # nil
-assert Calc.multiply(3, 3) == 9 # nil
-assert Calc.multiply('2', 4) == 8 # nil
+assert Calc.multiply(2, 2) == 4
+assert Calc.multiply(3, 3) == 9
+assert Calc.multiply('2', 4) == 8
 ```
 
 Tranquilo né?
@@ -450,15 +450,15 @@ end
 # == tests ==
 class CalcTest < UnitTest
   def test_sum
-    assert Calc.sum(1, 1) == 2 # nil
-    assert Calc.sum(1, 3) == 4 # nil
-    assert Calc.sum('3', 3) == 6 # nil
+    assert Calc.sum(1, 1) == 2
+    assert Calc.sum(1, 3) == 4
+    assert Calc.sum('3', 3) == 6
   end
 
   def test_multiply
-    assert Calc.multiply(2, 2) == 4 # nil
-    assert Calc.multiply(3, 3) == 9 # nil
-    assert Calc.multiply('2', 4) == 8 # nil
+    assert Calc.multiply(2, 2) == 4
+    assert Calc.multiply(3, 3) == 9
+    assert Calc.multiply('2', 4) == 8
   end
 end
 
