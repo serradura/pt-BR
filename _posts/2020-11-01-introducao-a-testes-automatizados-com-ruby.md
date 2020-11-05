@@ -406,7 +406,9 @@ Novos requisitos:
 1. Transformar `String` com números e `.` em `floats`.
 2. Lançar uma exceção caso algum dos argumentos não seja numérico, ou uma string com números (inteiros ou `floats`).
 
-**2)** Analise o código abaixo e procure descobrir com o auxílio da <a href="https://ruby-doc.org/core-2.7.2/" target="_blank">documentação do Ruby</a> os métodos necessários para fazer a classe `UnitTest` funcionar.
+**2)** Análise o código abaixo e procure entender como ele funciona.
+
+> **Dica:** use <a href="https://ruby-doc.org/core-2.7.2/" target="_blank">a documentação do Ruby</a> para entender os métodos utilizados na classe `UnitTest`.
 
 ```ruby
 # == testing lib ==
