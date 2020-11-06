@@ -111,7 +111,7 @@ class Calc
 end
 ```
 
-Métodos estáticos tem as mesmas propriedades de métodos procedurais. Sendo bem comum que métodos como esses fiquem enormes e se tornem difíceis de manter e testar (será o <a href="/blog/introducao-a-testes-automatizados-com-ruby/" target="_blank">próximo post</a> do blog).
+Métodos estáticos tem as mesmas propriedades de métodos procedurais. Sendo bem comum que métodos como esses fiquem enormes e se tornem difíceis de manter e testar (será o <a href="/pt-BR/blog/introducao-a-testes-automatizados-com-ruby/" target="_blank">próximo post</a> do blog).
 
 ## Métodos de instância
 

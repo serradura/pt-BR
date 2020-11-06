@@ -1,6 +1,6 @@
 ---
 title: "Introdução a testes automatizados (TDD) com Ruby"
-last_modified_at: 2020-11-05T02:12:00-03:00
+last_modified_at: 2020-11-06T08:06:00-03:00
 categories:
   - Blog
 tags:
@@ -66,7 +66,7 @@ A curto prazo tudo isso pode parecer improdutivo, já que você irá escrever ma
 
 ## Como fazer TDD?
 
-Para responder a essa pergunta te convido a escrever uma lib de testes para colocarmos toda a teoria em prática. Recomendo a leitura do <a href="/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" title="Programação multiparadigma - As diferentes formas de declarar comportamento em Ruby">post anterior</a> já que o conteúdo do mesmo servirá de base para nos auxiliar na implementação.
+Para responder a essa pergunta te convido a escrever uma lib de testes para colocarmos toda a teoria em prática. Recomendo a leitura do <a href="/pt-BR/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" title="Programação multiparadigma - As diferentes formas de declarar comportamento em Ruby">post anterior</a> já que o conteúdo do mesmo servirá de base para nos auxiliar na implementação.
 
 Um dos conceitos chaves dessa prática é a que testes devem ser encarados como uma **fonte de verdade**. Ou seja, **os testes não podem falhar**.
 
@@ -89,7 +89,7 @@ RuntimeError: os valores devem ser iguais.
 
 Será que você teve a mesma ideia que eu? Que tal usarmos uma sequência de condicionais + exceptions para definir os nossos testes?
 
-> Afim de ter uma relação com o <a href="/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" title="Programação multiparadigma - As diferentes formas de declarar comportamento em Ruby">post anterior</a>, usaremos o exemplo de uma calculadora para colocar em prática o uso de TDD.
+> Afim de ter uma relação com o <a href="/pt-BR/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" title="Programação multiparadigma - As diferentes formas de declarar comportamento em Ruby">post anterior</a>, usaremos o exemplo de uma calculadora para colocar em prática o uso de TDD.
 
 **Primeiro passo:** escrever um teste que falha.
 
@@ -169,7 +169,7 @@ raise 'asserção falhou' if sum(1, 3) != 4
 
 Uhuuuu! Os testes voltaram a passar.
 
-Curtiu? Mas assim, dado que os testes estão passando que tal começarmos a refatorar a nossa "lib de testes"?
+Curtiu? Uma vez que os testes estão passando que tal começarmos a refatorar a nossa "lib de testes"?
 
 Para isso, sugiro criarmos um método `assert` que lançará uma exception caso o valor do argumento seja `false`.
 
@@ -307,7 +307,7 @@ Viu? Nossos testes continuaram verdes. o/
 
 > **Dica:** <a href="https://guru-sp.github.io/tutorial_ruby/construcoes-simples.html" target="_blank">Clique aqui</a> para conhecer mais sobre o operador ternário `?:` que foi utilizado no método `numeric_value`.
 
-Mas assim, dado o que foi dito no <a href="/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" target="_blank">post anterior</a>, que tal transformarmos esses <a href="/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/#métodos-globais">métodos globais</a> em <a href="/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/#métodos-de-classe">métodos de uma classe</a>?
+Com base no que foi dito no <a href="/pt-BR/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" target="_blank">post anterior</a>, que tal transformarmos esses <a href="/pt-BR/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/#métodos-globais">métodos globais</a> em <a href="/pt-BR/blog/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/#métodos-de-classe">métodos de uma classe</a>?
 
 Veja abaixo a transformação dos métodos `sum` e `numeric_value` em métodos da classe `Calc`.
 
