@@ -410,7 +410,7 @@ puts result.data # { :number => 10 }
 ap result.transitions
 ```
 
-Valeu! 🙂
+Gostou do conteúdo? Deixe seu comentário aqui embaixo contando o que achou. Valeu! 😉
 
 ---
 

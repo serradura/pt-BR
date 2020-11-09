@@ -381,7 +381,7 @@ Recomendo que você pratique e estude o máximo possível sobre esse tema (teste
 
 No próximo post abordarei sobre o uso das principais bibliotecas de testes utilizadas em projetos Ruby: o <a href="https://github.com/seattlerb/minitest" target="_blank">minitest</a> e o <a href="https://github.com/rspec/rspec" target="_blank">rspec</a>.
 
-Valeu! 🙂
+Gostou do conteúdo? Deixe seu comentário aqui embaixo contando o que achou. Valeu! 😉
 
 ## Agradecimentos
 

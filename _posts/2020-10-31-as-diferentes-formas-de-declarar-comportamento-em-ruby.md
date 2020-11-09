@@ -256,7 +256,7 @@ Sem problemas, confira a palestra (30 minutos) que fiz e que apresenta o quão f
 
 Os exemplos de código deste post estão disponíveis nesse <a href="https://gist.github.com/serradura/dbadb71027262614e64728e5606fc8de" target="_blank">gist</a>.
 
-Valeu! 🙂
+Gostou do conteúdo? Deixe seu comentário aqui embaixo contando o que achou. Valeu! 😉
 
 ---
 
