@@ -43,7 +43,7 @@ Gostou do conteúdo? Deixe seu comentário aqui embaixo contando o que achou. Va
 
 ## Desafios
 
-<a href="pt-BR/posts/" target="_blank">Leia os outros posts do blog</a> e crie arquivos `.rb` com os exemplos de código para então executá-los e modificá-los (melhor forma de aprender é praticando).
+<a href="/pt-BR/posts/" target="_blank">Leia os outros posts do blog</a> e crie arquivos `.rb` com os exemplos de código para então executá-los e modificá-los (melhor forma de aprender é praticando).
 
 ---
 
