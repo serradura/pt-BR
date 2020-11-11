@@ -31,6 +31,8 @@ E, embora o ecossistema `dry-rb` fosse promissor por favorecer um desenvolviment
 
 Enfim, por conta dessas experência (ao longo de anos) e a dificuldade em capacitar desenvolvedores Jr, Pl e Sr. Resolvi criar uma gem que tivesse uma aproximação com o Rails (para evitar essa aversão) e que promovesse boas práticas de desenvolvimento (leia-se SOLID). Pois bem, bora ver código para entender o que a <a href="https://github.com/serradura/u-case" target="_blank">u-case</a> tem a oferecer.
 
+> **Obs:** Recomendo a leitura <a href="/blog/dicas-para-iniciantes-de-como-instalar-e-executar-codigo-ruby/" target="_blank">desse post</a> caso não saiba como executar os exemplos de código a seguir.
+
 > **Nota:** A fim de facilitar a experimentação, farei uso do <a href="https://bundler.io/guides/bundler_in_a_single_file_ruby_script.html" target="_blank">bundler inline</a> em alguns exemplos. Assim será possível copiar e colar os trechos de código em um arquivo `.rb` e ao executá-los (`ruby exemplo_da_gem_u-case.rb`) o bundler resolverá todas as dependências.
 
 ```ruby
