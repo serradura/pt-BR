@@ -7,7 +7,7 @@ tags:
   - ruby
 ---
 
-Olá, nesse post irei de compartilhar referências com excelentes explicações de como preparar um ambiente de desenvolvimento Ruby/Rails e demonstrar de maneira prática como executar arquivos **.rb**.
+Olá, nesse post irei compartilhar referências com excelentes explicações de como preparar um ambiente de desenvolvimento Ruby/Rails e demonstrar de maneira prática como executar arquivos **.rb**.
 
 ## Links para instalar Ruby/Rails
 
