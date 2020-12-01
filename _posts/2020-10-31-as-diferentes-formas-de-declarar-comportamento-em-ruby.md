@@ -16,7 +16,7 @@ Mas o que seria um comportamento? Um comportamento é uma unidade de código (en
 
 Ao longo deste post irei demonstrar como utilizar **métodos** em diferentes contextos (`global`, `classe`, `instâncias` e `módulos`) e como utilizar **funções**.
 
-> **Obs:** Recomendo a leitura <a href="/blog/dicas-para-iniciantes-de-como-instalar-e-executar-codigo-ruby/" target="_blank">desse post</a> caso não saiba como executar os exemplos de código a seguir.
+> **Obs:** Recomendo a leitura <a href="/pt-BR/blog/dicas-para-iniciantes-de-como-instalar-e-executar-codigo-ruby/" target="_blank">desse post</a> caso não saiba como executar os exemplos de código a seguir.
 
 ## Métodos globais
 
