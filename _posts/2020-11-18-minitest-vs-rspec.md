@@ -80,7 +80,7 @@ Executando o exemplo anterior:
 
 {% include figure image_path="/assets/images/5-minitest-vs-rspec/executando_o_minitest.gif" alt="Executando o exemplo anterior - minitest." %}
 
-> <span style="font-style: normal;">**Obs:** Recomendo a leitura <a href="/blog/dicas-para-iniciantes-de-como-instalar-e-executar-codigo-ruby/" target="_blank">desse post</a> caso não saiba como executar os exemplos de código.</span>
+> <span style="font-style: normal;">**Obs:** Recomendo a leitura <a href="/pt-BR/blog/dicas-para-iniciantes-de-como-instalar-e-executar-codigo-ruby/" target="_blank">desse post</a> caso não saiba como executar os exemplos de código.</span>
 
 Agora, que habemus código bora analisar o que foi usado:
 

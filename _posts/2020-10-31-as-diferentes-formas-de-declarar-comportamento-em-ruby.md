@@ -243,7 +243,7 @@ p Calc::Multiply.call(3, 3) # 9
 
 ## Concluindo
 
-Esse post tem como objetivo introduzir os recursos que classificam Ruby como uma **liguagem multiparadigma** (conforme apresentado na <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" target="_blank">wikipedia</a>), pelo fato dela suportar os paradigmas:
+Esse post tem como objetivo introduzir os recursos que classificam Ruby como uma **linguagem multiparadigma** (conforme apresentado na <a href="https://en.wikipedia.org/wiki/Ruby_(programming_language)" target="_blank">wikipedia</a>), pelo fato dela suportar os paradigmas:
 - Procedural
 - Orientado a objetos
 - Funcional

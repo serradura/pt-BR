@@ -68,7 +68,7 @@ A curto prazo tudo isso pode parecer improdutivo, já que você irá escrever ma
 
 Para responder a essa pergunta te convido a escrever uma lib de testes para colocarmos toda a teoria em prática. Recomendo a leitura do <a href="/pt-BR/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" title="Programação multiparadigma - As diferentes formas de declarar comportamento em Ruby">post anterior</a> já que o conteúdo do mesmo servirá de base para nos auxiliar na implementação.
 
-> **Obs:** Recomendo a leitura <a href="/blog/dicas-para-iniciantes-de-como-instalar-e-executar-codigo-ruby/" target="_blank">desse post</a> caso não saiba como executar os exemplos de código a seguir.
+> **Obs:** Recomendo a leitura <a href="/pt-BR/blog/dicas-para-iniciantes-de-como-instalar-e-executar-codigo-ruby/" target="_blank">desse post</a> caso não saiba como executar os exemplos de código a seguir.
 
 Um dos conceitos chaves dessa prática é a que testes devem ser encarados como uma **fonte de verdade**. Ou seja, **os testes não podem falhar**.
 

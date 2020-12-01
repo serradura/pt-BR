@@ -12,7 +12,7 @@ Seja bem vindo(a) ao meu primeiro post. Já aviso que estou começando e <a href
 
 ---
 
-A gem <a href="https://github.com/serradura/u-case" target="_blank">u-case</a> é um projeto que tenho me dedicado há mais de 1 ano. O projeto tem como objetivo facilitar o desenvolvimento e modelagem da camada de regras de negócio de aplições Ruby. Embora a gem possa ser utilizada com qualquer codebase, usarei o contexto de uma aplicação Ruby on Rails para apresentar o seu uso.
+A gem <a href="https://github.com/serradura/u-case" target="_blank">u-case</a> é um projeto que tenho me dedicado há mais de 1 ano. O projeto tem como objetivo facilitar o desenvolvimento e modelagem da camada de regras de negócio de aplicações Ruby. Embora a gem possa ser utilizada com qualquer codebase, usarei o contexto de uma aplicação Ruby on Rails para apresentar o seu uso.
 
 <span id="service-objects">Mas antes de falar dela, gostaria de destacar a abordagem mais praticada pela comunidade nos dias de hoje, no caso, a criação de <a href="https://codeclimate.com/blog/7-ways-to-decompose-fat-activerecord-models/" target="_blank">service objects</a></span>. Em geral, os services objects ficam localizados na pasta `app/services` de uma aplicação Rails e tem como responsabilidade concentrar as regras de negócio da aplicação, permitindo assim que outras camadas fiquem mais coesas (Ex: controllers e models). Porém, essa abordagem tem sido alvo de muitas críticas <a href="https://avdi.codes/service-objects/" target="_blank">[1]</a><a href="https://www.codewithjason.com/rails-service-objects/" target="_blank">[2]</a>. A razão disso é que o resultado mais comum é a criação de classes enormes e com excesso de responsabilidades. Dificultando assim a manutenção e evolução do código mediante o aumento de complexidade por conta de requisitos de negócios cada vez mais sofisticados.
 
@@ -29,9 +29,9 @@ Mas ao longo desse processo tive diversas alegrias e tristezas no uso de cada um
 
 E, embora o ecossistema `dry-rb` fosse promissor por favorecer um desenvolvimento bem <a href="https://en.wikipedia.org/wiki/SOLID" target="_blank">SOLID</a>, era muito comum constar uma grande aversão a essas gems por conta do estilo funcional que elas possuem.
 
-Enfim, por conta dessas experência (ao longo de anos) e a dificuldade em capacitar desenvolvedores Jr, Pl e Sr. Resolvi criar uma gem que tivesse uma aproximação com o Rails (para evitar essa aversão) e que promovesse boas práticas de desenvolvimento (leia-se SOLID). Pois bem, bora ver código para entender o que a <a href="https://github.com/serradura/u-case" target="_blank">u-case</a> tem a oferecer.
+Enfim, por conta dessas experiência (ao longo de anos) e a dificuldade em capacitar desenvolvedores Jr, Pl e Sr. Resolvi criar uma gem que tivesse uma aproximação com o Rails (para evitar essa aversão) e que promovesse boas práticas de desenvolvimento (leia-se SOLID). Pois bem, bora ver código para entender o que a <a href="https://github.com/serradura/u-case" target="_blank">u-case</a> tem a oferecer.
 
-> **Obs:** Recomendo a leitura <a href="/blog/dicas-para-iniciantes-de-como-instalar-e-executar-codigo-ruby/" target="_blank">desse post</a> caso não saiba como executar os exemplos de código a seguir.
+> **Obs:** Recomendo a leitura <a href="/pt-BR/blog/dicas-para-iniciantes-de-como-instalar-e-executar-codigo-ruby/" target="_blank">desse post</a> caso não saiba como executar os exemplos de código a seguir.
 
 > **Nota:** A fim de facilitar a experimentação, farei uso do <a href="https://bundler.io/guides/bundler_in_a_single_file_ruby_script.html" target="_blank">bundler inline</a> em alguns exemplos. Assim será possível copiar e colar os trechos de código em um arquivo `.rb` e ao executá-los (`ruby exemplo_da_gem_u-case.rb`) o bundler resolverá todas as dependências.
 
@@ -175,7 +175,7 @@ Também foi fácil né? Bacana!
 
 Veja que o resultado de `Sum` é `Success result: { number: a + b }`, e o atributo de `Add3` é `:number`. Ou seja, o **_output_** de `Sum` tornou-se o **_input_** do `Add3`.
 
-Hummmm... O que aconteceria se fizessemos uma composição com outra composição?
+Hummmm... O que aconteceria se fizéssemos uma composição com outra composição?
 
 Para testarmos isso, sugiro criarmos algo que somará dois números e então adicionará nove, sendo que essa última operação será uma composição.
 
@@ -338,7 +338,7 @@ puts result.failure? # true
 p result.data        # { :errors => ["Email is invalid"] }
 ```
 
-> **Atenção:** as validações não precisam ser confome o exemplo acima (elas estão bem feinhas <span style="font-style: normal;">😅</span>).
+> **Atenção:** as validações não precisam ser conforme o exemplo acima (elas estão bem feinhas <span style="font-style: normal;">😅</span>).
 >
 > É possível fazer uso das validações do ActiveModel nos atributos dos seus caso de uso. <a href="https://github.com/serradura/u-case/blob/main/README.pt-BR.md#u-casewith_activemodel_validation---como-validar-os-atributos-do-caso-de-uso" target="_blank">Clique aqui</a> para conferir na documentação.
 > (**Abordarei isso em outro post**)
