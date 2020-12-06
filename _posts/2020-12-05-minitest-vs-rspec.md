@@ -1,5 +1,5 @@
 ---
-title: "Minitest VS Rspec"
+title: "Minitest VS Rspec - Introdução e comparação as diferentes formas de escrever testes"
 last_modified_at: 2020-12-05T18:08:00-03:00
 categories:
   - Blog
