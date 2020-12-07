@@ -1,6 +1,6 @@
 ---
 title: "Minitest VS Rspec - Introdução e comparação as diferentes formas de escrever testes"
-last_modified_at: 2020-12-05T18:08:00-03:00
+last_modified_at: 2020-12-07T10:44:00-03:00
 categories:
   - Blog
 tags:
@@ -576,6 +576,8 @@ Para não parecer que o rspec é pior (o que não é), algo que não foi coberto
 Minha questão com rspec é que ele exigirá mais de quem escreve e mantém os testes por conta dos seus conceitos e recursos, algo que não acontece pela simplicidade e objetividade do minitest.
 
 Testes geram confiança e permitem velocidade em qualquer equipe de desenvolvimento. Por isso sou a favor de usar a ferramenta que melhor favoreça isso, a que permita fazer mais com menos. E que nesse caso, dentro do tema testes em Ruby, o melhor custo benefício é o minitest na minha humilde opinião.
+
+Gostou do conteúdo? Deixe seu comentário aqui embaixo contando o que achou. Valeu! 😉
 
 ## Uma curiosidade...
 
