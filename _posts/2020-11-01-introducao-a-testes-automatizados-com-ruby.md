@@ -1,6 +1,6 @@
 ---
 title: "Introdução a testes automatizados (TDD) com Ruby"
-last_modified_at: 2020-11-06T08:06:00-03:00
+last_modified_at: 2020-12-07T10:40:00-03:00
 categories:
   - Blog
 tags:
@@ -381,7 +381,7 @@ O poder do TDD está em desenvolver somente o código necessário para fazer o t
 
 Recomendo que você pratique e estude o máximo possível sobre esse tema (testes), porque uma vez que você tem a funcionalidade garantida, será possível explorar coisas como: refactoring, design de código, performance, segurança e etc... Ou seja, testes prepara o terreno para você explorar diferentes tipos de assunto.
 
-No próximo post abordarei sobre o uso das principais bibliotecas de testes utilizadas em projetos Ruby: o <a href="https://github.com/seattlerb/minitest" target="_blank">minitest</a> e o <a href="https://github.com/rspec/rspec" target="_blank">rspec</a>.
+No <a href="/pt-BR/blog/minitest-vs-rspec/" target="_blank">próximo post</a> sobre testes, abordarei o uso das principais bibliotecas utilizadas em projetos Ruby: o <a href="https://github.com/seattlerb/minitest" target="_blank">minitest</a> e o <a href="https://github.com/rspec/rspec" target="_blank">rspec</a>.
 
 Gostou do conteúdo? Deixe seu comentário aqui embaixo contando o que achou. Valeu! 😉
 
