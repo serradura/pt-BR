@@ -6,6 +6,7 @@ categories:
 tags:
   - ruby
   - tdd
+  - testes
 ---
 
 Olá, se tem uma coisa que pessoas e equipes de auto desempenho possuem é **confiança**. Sendo que em desenvolvimento de software é muito importante ter certeza que o teu código funciona na medida que é modificado. A técnica mais comum e intuitiva para aumentar confiança de que as mudanças não estão gerando *bugs* é a realização de testes manuais. Ou seja, um ser humano, executará uma série de ações em sequência afim de avaliar se o sistema funciona conforme o esperado.

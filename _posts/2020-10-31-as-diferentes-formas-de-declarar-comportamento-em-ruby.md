@@ -5,9 +5,9 @@ categories:
   - Blog
 tags:
   - ruby
-  - oop
-  - fp
-  - sp
+  - orientação-a-objetos
+  - programação-funcional
+  - programação-procedural
 ---
 
 Olá, o objetivo deste post é de apresentar as diferentes formas que a linguagem Ruby permite você declarar comportamentos.

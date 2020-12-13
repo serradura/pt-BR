@@ -6,6 +6,7 @@ categories:
 tags:
   - ruby
   - tdd
+  - testes
   - minitest
   - rspec
 ---
