@@ -61,8 +61,10 @@ author:
   name   : "Rodrigo Serradura"
   avatar : "/assets/images/bio-photo1.jpg"
   bio    : |
-    Rubysta raiz, interessado em design e arquitetura de software.
-    Entusiasta de programação funcional, CTO da Docsales, casado com a Talita e paizão da Bella e da Luiza.
+    Rubysta raiz, interessado / focado em design e arquitetura de software.
+    Criador da <a href="https://github.com/serradura/u-case" style="text-decoration: underline;" target="_blank">gem u-case</a>,
+    fundador do <a href="https://t.me/ruby_arch_design_br" style="text-decoration: underline;" target="_blank">ada.rb</a>,
+    casado com a Talita e paizão da Bella e da Luiza.
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
