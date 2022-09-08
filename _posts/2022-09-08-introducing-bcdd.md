@@ -61,7 +61,7 @@ The idea here is to move forward when there is clarity about what and how much c
 
 The following link contains a PDF with examples of different ways to organize the folders and files of a Ruby on Rails application. The B/CDD version would be like the last versions.
 
-[Get the PDF (Ruby on Rails file structure by Rodrigo Serradura)]({{ site.url }}/assets/pdfs/ror_file_structure-rodrigo_serradura_v2.pdf)
+[Get the PDF (Ruby on Rails file structure by Rodrigo Serradura)]({{ site.url }}/pt-BR/assets/pdfs/ror_file_structure-rodrigo_serradura_v2.pdf)
 
 Access this GitHub repository to see a Ruby on Rails application created following this process and applying the B/CDD code guidelines.
 
