@@ -1,6 +1,6 @@
 ---
 title: "Conteúdos para aprender sobre B/CDD, casos de uso, gem u-case"
-last_modified_at: 2022-09-08T13:40:00-03:00
+last_modified_at: 2022-09-08T14:48:00-03:00
 categories:
   - Blog
 tags:
@@ -41,9 +41,9 @@ Esse <a href="/pt-BR/blog/introducing-bcdd/" target="_blank">link</a> é o únic
 
 ### Artigo no LinkedIn - Pedro Basilio de Camargo Neto
 
-Esse [artigo](https://www.linkedin.com/posts/pedro-basilio_caso-t%C3%ADpico-uma-empresa-novata-com-pouca-activity-6956772219867807744-MlF9/?utm_source=share&utm_medium=member_desktop) incrível descreve com maestria os problemas de não equilibrar qualidade e velocidade desde o início do desenvolvimento e aborda como o B/CDD visa resolver isso.
+Esse <a href="https://www.linkedin.com/posts/pedro-basilio_caso-t%C3%ADpico-uma-empresa-novata-com-pouca-activity-6956772219867807744-MlF9/?utm_source=share&utm_medium=member_desktop" target="_blank">artigo</a> incrível descreve com maestria os problemas de não equilibrar qualidade e velocidade desde o início do desenvolvimento e aborda como o B/CDD visa resolver isso.
 
-**PS:** A repercussão foi tamanha que [virou destaque no LinkedIn](https://www.linkedin.com/news/story/os-riscos-de-programar-no-m%C3%A9todo-vai-cavalo-4913825/).
+**PS:** A repercussão foi tamanha que <a href="https://www.linkedin.com/news/story/os-riscos-de-programar-no-m%C3%A9todo-vai-cavalo-4913825/" target="_blank">virou destaque no LinkedIn</a>.
 
 ### Hierarquia de necessidades do software - Otavio Lemos
 
@@ -88,7 +88,7 @@ Conto a história por detrás da gem e ensino os diferentes recursos (do básico
 
 <br/>
 
-**Links relacionados:**
+**Links relacionado:**
 
 * <a href="https://github.com/serradura/rails_app_to_refactor" target="_blank">https://github.com/serradura/rails_app_to_refactor</a>
 
@@ -96,9 +96,15 @@ Conto a história por detrás da gem e ensino os diferentes recursos (do básico
 
 ### Palestra: Métodos que potencializam equipes de desenvolvimento de software
 
-BNessa palestra apresento de forma prática o método Kanban e outras práticas que podem / devem ser usados em conjunto com o B/CDD.
+Nessa palestra apresento de forma prática o método Kanban e outras práticas que podem / devem ser usados em conjunto com o B/CDD.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HiOhgO2loKQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br/>
+
+**Links relacionado:**
+
+* <a href="https://speakerdeck.com/serradura/entender-para-atender-metodos-que-potencializam-equipes-de-desenvolvimento-de-software" target="_blank">Slides da palestra</a>
 
 ---
 
