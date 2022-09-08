@@ -63,7 +63,7 @@ author:
   bio    : |
     Rubysta raiz, interessado / focado em design e arquitetura de software.
     Criador da <a href="https://github.com/serradura/u-case" style="text-decoration: underline;" target="_blank">gem u-case</a>,
-    fundador do <a href="https://t.me/ruby_arch_design_br" style="text-decoration: underline;" target="_blank">ada.rb</a>,
+    fundador do <a href="https://t.me/ruby_arch_design_br" style="text-decoration: underline;" target="_blank">Ada.rb</a>,
     casado com a Talita e paizão da Bella e da Luiza.
   links:
     - label: "Twitter"
@@ -72,9 +72,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/serradura"
-    - label: "Youtube"
+    - label: "Youtube Ada.rb"
       icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/channel/UCnkqH-e9V0VMeYrXElEPnTA"
+      url: "https://www.youtube.com/c/ArquiteturaeDesigndeAplica%C3%A7%C3%B5esRuby"
 
 footer:
   links:
@@ -84,9 +84,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/serradura"
-    - label: "Youtube"
+    - label: "Youtube Ada.rb"
       icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/channel/UCnkqH-e9V0VMeYrXElEPnTA"
+      url: "https://www.youtube.com/c/ArquiteturaeDesigndeAplica%C3%A7%C3%B5esRuby"
 
 defaults:
   # _posts
