@@ -1,6 +1,6 @@
 ---
-title: "Introducing B/CDD (Business/Context Driven Development)"
-last_modified_at: 2022-09-08T11:00:00-03:00
+title: "Introducing B/CDD"
+last_modified_at: 2022-09-08T14:52:00-03:00
 categories:
   - Blog
 tags:
