@@ -75,6 +75,9 @@ author:
     - label: "Youtube Ada.rb"
       icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/c/ArquiteturaeDesigndeAplica%C3%A7%C3%B5esRuby"
+    - label: "B/CDD"
+      icon: "fa fa-fw fa-link"
+      url: "https://serradura.github.io/pt-BR/blog/introducing-bcdd/"
 
 footer:
   links:
