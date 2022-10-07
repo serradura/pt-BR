@@ -4,7 +4,7 @@ last_modified_at: 2020-11-01T10:15:00-03:00
 categories:
   - Blog
 tags:
-  - beginner
+  - iniciante
   - ruby
   - orientação-a-objetos
   - programação-funcional
