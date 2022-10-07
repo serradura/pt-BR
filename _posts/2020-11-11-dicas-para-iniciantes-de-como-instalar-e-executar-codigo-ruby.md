@@ -4,6 +4,7 @@ last_modified_at: 2020-11-11T09:48:00-03:00
 categories:
   - Blog
 tags:
+  - iniciante
   - ruby
 ---
 
