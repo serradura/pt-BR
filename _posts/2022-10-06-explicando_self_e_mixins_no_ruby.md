@@ -1,6 +1,6 @@
 ---
 title: "Entendendo o `self` e `mixins` no Ruby"
-last_modified_at: 2022-10-06T14:30:00-03:00
+last_modified_at: 2022-10-07T20:22:00-03:00
 categories:
   - Blog
 tags:
@@ -61,7 +61,7 @@ mostre_minha_classe
 2. O método `.inspect` faz uma representação do objeto como *string*
 3. O método `.class` retorna a classe que foi utilizada para gerar o objeto.
 
-Perceba que no exemplo acima, o método `quem_sou_eu` retornou `main`, e o `mostre_minha_classe` indica que esse `main` é uma instância da classe `Object`.
+Perceba que no exemplo acima, <a href="/pt-BR/blog/as-diferentes-formas-de-declarar-comportamento-em-ruby/" target="_blank">o método</a> `quem_sou_eu` retornou `main`, e o `mostre_minha_classe` indica que esse `main` é uma instância da classe `Object`.
 
 > **Observação:** Esse `main` é o que chamamos de **top level scope** (escopo do nível superior), todo código Ruby executa a partir dele. O mesmo é gerado pelo próprio Ruby e tudo que for declarado nele estará disponível em qualquer outro ponto do código.
 
