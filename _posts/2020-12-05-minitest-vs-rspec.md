@@ -19,8 +19,8 @@ tags:
   - [Entendendo os testes com Rspec](#entendendo-os-testes-com-rspec)
     - [Implementando os testes com `one-liner syntax`](#implementando-os-testes-com-one-liner-syntax)
   - [Concluindo a introdução ao Rspec](#concluindo-a-introdução-ao-rspec)
-  - [Concluindo a comparação e qual a minha preferência dentre os dois](#concluindo-a-comparação-e-qual-a-minha-preferência-dentre-os-dois)
-  - [Uma curiosidade...](#uma-curiosidade)
+- [Concluindo a comparação e qual a minha preferência dentre os dois](#concluindo-a-comparação-e-qual-a-minha-preferência-dentre-os-dois)
+- [Uma curiosidade...](#uma-curiosidade)
 
 Dando continuidade ao tema testes (<a href="/pt-BR/blog/introducao-a-testes-automatizados-com-ruby/" target="_blank">acesse o primeiro artigo</a>), irei abordar as duas principais bibliotecas utilizadas na comunidade Ruby. São elas, o <a href="https://github.com/seattlerb/minitest" target="_blank">minitest</a> e o <a href="https://github.com/rspec/rspec" target="_blank">rspec</a>.
 
@@ -575,7 +575,7 @@ Ou seja, essa abstração tem um custo (um tanto alto) na curva de aprendizado e
 
 Para exemplificar como a curva de aprendizado é maior, lembra-se que no tópico de [conclusão do minitest](#concluindo-a-introdução-ao-minitest) eu abordei o conceito de `setup` e `teardown`? Então, no rspec você tem diferentes formas de fazer isso, como: <a href="https://relishapp.com/rspec/rspec-core/v/3-10/docs/hooks" target="_blank">before / before(:all) / after / after(:all) / around</a>, <a href="https://relishapp.com/rspec/rspec-core/v/3-10/docs/helper-methods/let-and-let" target="_blank">let / let!</a>, <a href="https://relishapp.com/rspec/rspec-core/v/3-10/docs/subject" target="_blank">subject</a>. Além de ter de aprender a precedência de cada um deles e como os mesmos afetam os contextos que estão dentro ou fora de um aninhamento.
 
-## Concluindo a comparação e qual a minha preferência dentre os dois
+# Concluindo a comparação e qual a minha preferência dentre os dois
 
 Primeiro, gostaria de recomendar que você procure aprender ambos. Porque o mercado de trabalho exigirá um ou outro.
 
@@ -591,7 +591,7 @@ Testes geram confiança e permitem velocidade em qualquer equipe de desenvolvime
 
 Gostou do conteúdo? Deixe seu comentário aqui embaixo contando o que achou. Valeu! 😉
 
-## Uma curiosidade...
+# Uma curiosidade...
 
 Você sabia que o Shopify (deve ser a maior aplicação de Ruby do mundo com suas 3 milhões de linhas de código) faz uso apenas do minitest?
 
