@@ -1,6 +1,6 @@
 ---
-title: "Dicas para iniciantes de como instalar e executar código Ruby"
-last_modified_at: 2020-11-11T09:48:00-03:00
+title: "Dica: Como instalar e executar código Ruby (para iniciantes)"
+last_modified_at: 2022-10-07T21:48:00-03:00
 categories:
   - Blog
 tags:
@@ -22,7 +22,7 @@ Primeiro, verifique se o Ruby está instalado em seu ambiente. Para fazer isso, 
 
 Se tudo der certo você verá algo como:
 ```sh
-ruby 2.6.5p114 (2019-10-01 revision 67812)
+ruby 3.1.2p20 (2022-04-12 revision 4491bb740a)
 ```
 
 Uma vez que o Ruby está instalado, basta criar um arquivo com a extensão `.rb` e executá-lo com o comando `ruby`.
