@@ -8,6 +8,11 @@ tags:
   - ruby
 ---
 
+- [Links para instalar Ruby/Rails](#links-para-instalar-rubyrails)
+- [Executando código Ruby](#executando-código-ruby)
+- [Concluindo](#concluindo)
+- [Desafios](#desafios)
+
 Olá, nesse post irei compartilhar referências com excelentes explicações de como preparar um ambiente de desenvolvimento Ruby/Rails e demonstrar de maneira prática como executar arquivos **.rb**.
 
 ## Links para instalar Ruby/Rails

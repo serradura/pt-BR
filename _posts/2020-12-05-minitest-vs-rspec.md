@@ -11,6 +11,17 @@ tags:
   - rspec
 ---
 
+- [Minitest](#minitest)
+  - [Entendendo a implementação do módulo `Calc`](#entendendo-a-implementação-do-módulo-calc)
+  - [Entendendo os testes com Minitest](#entendendo-os-testes-com-minitest)
+  - [Concluindo a introdução ao Minitest](#concluindo-a-introdução-ao-minitest)
+- [Rspec](#rspec)
+  - [Entendendo os testes com Rspec](#entendendo-os-testes-com-rspec)
+    - [Implementando os testes com `one-liner syntax`](#implementando-os-testes-com-one-liner-syntax)
+  - [Concluindo a introdução ao Rspec](#concluindo-a-introdução-ao-rspec)
+  - [Concluindo a comparação e qual a minha preferência dentre os dois](#concluindo-a-comparação-e-qual-a-minha-preferência-dentre-os-dois)
+  - [Uma curiosidade...](#uma-curiosidade)
+
 Dando continuidade ao tema testes (<a href="/pt-BR/blog/introducao-a-testes-automatizados-com-ruby/" target="_blank">acesse o primeiro artigo</a>), irei abordar as duas principais bibliotecas utilizadas na comunidade Ruby. São elas, o <a href="https://github.com/seattlerb/minitest" target="_blank">minitest</a> e o <a href="https://github.com/rspec/rspec" target="_blank">rspec</a>.
 
 O foco deste post está no uso prático das libs e não em fazer uma análise profunda de cada uma delas. Minha intenção com esse conteúdo é de apresentar suas diferenças e destacar as forças e fraquezas de cada uma delas na minha humilde opinião.

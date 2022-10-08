@@ -8,6 +8,11 @@ tags:
   - u-case
 ---
 
+- [Implementando algo do nosso dia dia](#implementando-algo-do-nosso-dia-dia)
+  - [💡 Insight: Testes unitários](#-insight-testes-unitários)
+- [Concluindo](#concluindo)
+- [Desafio](#desafio)
+
 Seja bem vindo(a) ao meu primeiro post. Já aviso que estou começando e <a href="https://twitter.com/serradura" target="_blank">conto com teu feedback</a> para me auxiliar a melhorar a maneira como compartilho conhecimento aqui no blog. 😉
 
 ---

@@ -9,6 +9,17 @@ tags:
   - testes
 ---
 
+- [O que é TDD?](#o-que-é-tdd)
+  - [Primeiro passo: <span style="font-weight: normal;">escrever um teste que irá falhar</span>.](#primeiro-passo-escrever-um-teste-que-irá-falhar)
+  - [Próximo passo: <span style="font-weight: normal;">fazer o teste passar</span>.](#próximo-passo-fazer-o-teste-passar)
+  - [Último passo: <span style="font-weight: normal;">refatorar o código produzido</span>.](#último-passo-refatorar-o-código-produzido)
+  - [Por fim: <span style="font-weight: normal;">repita o ciclo</span>.](#por-fim-repita-o-ciclo)
+- [Por que fazer TDD?](#por-que-fazer-tdd)
+- [Como fazer TDD?](#como-fazer-tdd)
+- [Concluindo](#concluindo)
+- [Agradecimentos](#agradecimentos)
+- [Desafios](#desafios)
+
 Olá, se tem uma coisa que pessoas e equipes de auto desempenho possuem é **confiança**. Sendo que em desenvolvimento de software é muito importante ter certeza que o teu código funciona na medida que é modificado. A técnica mais comum e intuitiva para aumentar confiança de que as mudanças não estão gerando *bugs* é a realização de testes manuais. Ou seja, um ser humano, executará uma série de ações em sequência afim de avaliar se o sistema funciona conforme o esperado.
 
 Testes realizados por seres humanos são válidos, mas é um recurso lento e caro se comparado a um processo automatizado. Por conta disso, nossa industria desenvolveu técnicas e ferramentas que permitem uma automação de boa parte desses processos.

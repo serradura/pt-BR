@@ -10,6 +10,12 @@ tags:
   - english
 ---
 
+- [The process](#the-process)
+- [The different stages/deliveries](#the-different-stagesdeliveries)
+- [The feedback loop](#the-feedback-loop)
+- [What would a codebase look like?](#what-would-a-codebase-look-like)
+- [Content to share](#content-to-share)
+
 This article is under construction. The main idea, for now, is to expose some content about the **B**usiness/**C**ontext **D**riven **D**evelopment process (B/CDD).
 
 ### The process

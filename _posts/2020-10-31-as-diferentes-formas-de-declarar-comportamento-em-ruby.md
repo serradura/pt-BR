@@ -11,6 +11,15 @@ tags:
   - programação-procedural
 ---
 
+- [Métodos globais](#métodos-globais)
+  - [Reflexão: Como agrupar comportamentos quando só se usa métodos globais?](#reflexão-como-agrupar-comportamentos-quando-só-se-usa-métodos-globais)
+- [Métodos de classe](#métodos-de-classe)
+- [Métodos de instância](#métodos-de-instância)
+- [Métodos estáticos em módulos](#métodos-estáticos-em-módulos)
+  - [Namespaces: Outra característica especial dos módulos](#namespaces-outra-característica-especial-dos-módulos)
+- [Funções](#funções)
+- [Concluindo](#concluindo)
+
 Olá, o objetivo deste post é de apresentar as diferentes formas que a linguagem Ruby permite você declarar comportamentos.
 
 Mas o que seria um comportamento? Um comportamento é uma unidade de código (encapsulada dentro de métodos ou funções) que executam uma ação.
