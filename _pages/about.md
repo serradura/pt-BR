@@ -12,6 +12,7 @@ Sou o fundador do meetup <a href="https://www.meetup.com/pt-BR/design-e-arquitet
 E também sou o criador de algumas Ruby gems (como diria Linus: **Show me the code**). São elas:
 <ul>
 <li><a href="https://github.com/serradura/u-case" target="_blank">u-case</a></li>
+<li><a href="https://github.com/serradura/u-struct" target="_blank">u-struct</a></li>
 <li><a href="https://github.com/serradura/u-attributes" target="_blank">u-attributes</a></li>
 <li><a href="https://github.com/serradura/u-observers" target="_blank">u-observers</a></li>
 <li><a href="https://github.com/serradura/kind" target="_blank">kind</a></li>

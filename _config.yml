@@ -59,37 +59,41 @@ plugins:
 
 author:
   name   : "Rodrigo Serradura"
-  avatar : "/assets/images/bio-photo1.jpg"
+  avatar : "/assets/images/bio-photo2.jpg"
   bio    : |
-    Rubysta raiz, interessado / focado em design e arquitetura de software.
+    Rubysta, entusiasta em design e arquitetura de software.
     Criador da <a href="https://github.com/serradura/u-case" style="text-decoration: underline;" target="_blank">gem u-case</a>,
-    fundador do <a href="https://t.me/ruby_arch_design_br" style="text-decoration: underline;" target="_blank">Ada.rb</a>,
-    casado com a Talita e paizão da Bella e da Luiza.
+    do <a href="https://serradura.github.io/pt-BR/blog/aprenda_bcdd_e_u-case/" style="text-decoration: underline;" target="_blank">B/CDD</a>
+    e fundador do <a href="https://adarb.org" style="text-decoration: underline;" target="_blank">Ada.rb</a>.
+    Casado com a Talita e paizão da Bella e da Luiza.
   links:
+    - label: "Contato"
+      icon: "fa-fw fa-link"
+      url: "https://rodrigoserradura.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/serradura"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/serradura"
-    - label: "Youtube Ada.rb"
+    - label: "Youtube"
       icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/c/ArquiteturaeDesigndeAplica%C3%A7%C3%B5esRuby"
-    - label: "B/CDD"
-      icon: "fa fa-fw fa-link"
-      url: "https://serradura.github.io/pt-BR/blog/introducing-bcdd/"
+      url: "https://www.youtube.com/channel/UCnkqH-e9V0VMeYrXElEPnTA"
 
 footer:
   links:
+    - label: "Contato"
+      icon: "fa-fw fa-link"
+      url: "https://rodrigoserradura.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/serradura"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/serradura"
-    - label: "Youtube Ada.rb"
+    - label: "Youtube"
       icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/c/ArquiteturaeDesigndeAplica%C3%A7%C3%B5esRuby"
+      url: "https://www.youtube.com/channel/UCnkqH-e9V0VMeYrXElEPnTA"
 
 defaults:
   # _posts
